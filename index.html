@@ -3,5 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>who is even salma?</h1>
+    <title>who is even salma?</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #0f0d05f1;
+            color: white;
+            padding: 20px;
+        }
+
+        .intro {
+            width: 100%;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        .tube {
+            position: relative;
+            width: 100%;
+            height: 24vw;
+            min-height: 200px;
+        }
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(2rem, 5vw, 4rem);
+            white-space: nowrap;
+            text-align: center;
+            width: 100%;
+        }
+
+        .char {
+            display: inline-block;
+            backface-visibility: hidden;
+        }
+    </style>
 </head>
+
+<body>
+    <div class="intro">
+        <div class="tube">
+            <h1 class="line line1">who is even salma?</h1>
+            <h1 class="line line2">who even is salma?</h1>
+            <h1 class="line line3">who even is salma?</h1>
+            <h1 class="line line4">who even is salma?</h1>
+        </div>
+    </div>
+
+    <script>
+        function crearSplitText(elemento) {
+            var texto = elemento.textContent;
+            var chars = texto.split('');
+            var contenedor = document.createElement('span');
+           
+            chars.forEach(function(letra) {
+                var span = document.createElement('span');
+                span.className = 'char';
+                span.textContent = letra === ' ' ? '\u00A0' : letra;
+                contenedor.appendChild(span);
+            });
+           
+            elemento.innerHTML = '';
+            elemento.appendChild(contenedor);
+           
+            return {
+                chars: contenedor.querySelectorAll('.char'),
+                elemento: elemento
+            };
+        }
+
+        window.addEventListener('load', function() {
+           
+            if (typeof gsap === 'undefined') {
+                alert('GSAP no se cargo');
+                return;
+            }
+
+            const intro = document.querySelector('.intro');
+            gsap.set(intro, { visibility: 'visible' });
+
+            const lines = document.querySelectorAll('.line');
+           
+            const splitLines = [];
+            lines.forEach(function(line) {
+                var split = crearSplitText(line);
+                splitLines.push(split);
+            });
+
+            const width = window.innerWidth;
+            const depth = -width / 8;
+            const transformOrigin = `50% 50% ${depth}px`;
+
+            gsap.set(lines, {
+                perspective: 700,
+                transformStyle: "preserve-3d"
+            });
+
+            const tl = gsap.timeline({ repeat: -1 });
+
+            splitLines.forEach(function(split, index) {
+                gsap.set(split.chars, {
+                    rotationX: -90,
+                    transformOrigin: transformOrigin
+                });
+
+                tl.to(split.chars, {
+                    rotationX: 90,
+                    stagger: 0.08,
+                    duration: 0.9,
+                    ease: "none",
+                    transformOrigin: transformOrigin
+                }, index * 0.45);
+            });
+
+            console.log('Animacion iniciada');
+
+        });
+    </script>
+</body>
+</html>
