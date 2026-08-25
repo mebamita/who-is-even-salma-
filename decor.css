@@ -1,107 +1,149 @@
-        @font-face {
-            font-family: 'Geologica';
-            src: url('Geologica.ttf')format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@font-face {
+    font-family: 'Geologica';
+    src: url('Geologica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #0f0d05f1;
-            font-family: 'Geologica';
-            color: white;
-            padding: 20px;
-        }
+@font-face {
+    font-family: 'Slackey';
+    src: url('Slackey-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        .intro {
-            width: 100%;
-            text-align: center;
-            visibility: hidden;
-            font-family: 'Geologica';
-           
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .tube {
-            position: relative;
-            width: 100%;
-            height: 20vw;
-            min-height: 180px;
-            font-family: 'Geologica';
-        }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0d05f1;
+    font-family: 'Geologica';
+    color: white;
+    padding: 20px;
+}
 
-        .line {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: clamp(2rem, 5vw, 4rem);
-            white-space: nowrap;
-            text-align: center;
-            width: 100%;
-            font-family: 'Geologica';
-        }
+.intro {
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    font-family: 'Geologica';
+}
 
+.tube {
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    min-height: 180px;
+    font-family: 'Geologica';
+}
 
-        .char {
-            display: inline-block;
-            backface-visibility: hidden;
-        }
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 5vw, 4rem);
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    font-family: 'Geologica';
+}
 
-        .fixed {
-            position: fixed;
-            text-align: center;
-            bottom: 50px;
-            cursor: pointer;
-        }
+.char {
+    display: inline-block;
+    backface-visibility: hidden;
+}
 
-        .wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-            overflow: hidden;
-        }
+.fixed {
+    position: fixed;
+    text-align: center;
+    bottom: 50px;
+    cursor: pointer;
+}
 
-        .wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.wrapper {
+    position: fixed;
+    top: 0;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+}
 
-        .mask {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0f0d05f1;
-            z-index: 2;
-            pointer-events: none;
-        }
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
 
-        .wrapper {
-            opacity: 0;
-            transition: opacity 0.8s;
-        }
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0d05f1;
+    z-index: 2;
+    pointer-events: none;
+}
 
-        .wrapper.visible {
-            opacity: 1;
-        }
+.wrapper {
+    opacity: 0;
+    transition: opacity 0.8s;
+}
 
+.wrapper.visible {
+    opacity: 1;
+}
+
+.wrapper h2 {
+    position: relative;
+    text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
+    color: rgba(180, 74, 219, 0.904);
+    font-family: Slackey;
+    font-size: clamp(24px, 2.9vw, 64px);
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper h3 {
+    font-family: Slackey;
+    color: rgba(131, 54, 159, 0.904);
+    text-shadow: 0 4px 20px rgba(114, 5, 123, 0.571);
+    text-align: center;
+    width: 100%;
+}
+
+.content-overlay {
+    z-index: 1;
+    position: absolute;
+     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.title-and-description {
+    position: relative;
+    padding-top: clampclamp(5px, 5vh, 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
