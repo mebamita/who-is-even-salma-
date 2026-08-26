@@ -164,7 +164,28 @@ body {
     display: block;
 }
 
+.Cutie-Froggie {
+    position: relative;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 0 20px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+
 .title-and-description img.laura-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.title-and-description img.Cutie-Froggie-image {
     width: 80%;
     max-width: 400px;
     height: auto;
