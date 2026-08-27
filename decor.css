@@ -113,7 +113,7 @@ body {
     text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
     color: rgba(180, 74, 219, 0.904);
     font-family: Slackey;
-    font-size: clamp(24px, 2.9vw, 64px);
+    font-size: clamp(60px, 4vw, 83px);
     text-align: center;
     width: 100%;
 }
@@ -201,4 +201,5 @@ body {
     display: block;
     margin: 0 auto;
     filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
+    margin-bottom: -60px;
 }
