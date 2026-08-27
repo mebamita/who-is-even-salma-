@@ -76,7 +76,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     z-index: 1;
@@ -84,6 +84,7 @@ body {
     padding: 20px 0;
     opacity: 0;
     transition: opacity 0.8s;
+    padding-top: 120px;
 
 }
 
@@ -109,13 +110,14 @@ body {
 
 
 .wrapper h2 {
-    position: relative;
     text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
     color: rgba(180, 74, 219, 0.904);
     font-family: Slackey;
     font-size: clamp(60px, 4vw, 83px);
     text-align: center;
     width: 100%;
+    flex-shrink: 0;
+    margin: 0;
 }
 
 .wrapper h3 {
@@ -202,4 +204,12 @@ body {
     margin: 0 auto;
     filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
     margin-bottom: -60px;
+}
+
+p2 {
+    position: relative; 
+    font-family: Geologica;
+    color: #620669fd;
+    font-size: 2vh;
+    margin-top: 37vh;
 }
