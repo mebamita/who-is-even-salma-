@@ -194,3 +194,10 @@ body {
     margin-bottom: 20px;
     display: block;
 }
+
+.curved-text {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
+}
