@@ -213,3 +213,17 @@ p2 {
     font-size: 2vh;
     margin-top: 37vh;
 }
+
+.Kindle {
+    width: 50vh;
+    height: auto;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.ME {
+    width: 50vh;
+    height: auto;
+    border-radius: 100px;
+    flex-direction: row;
+}
