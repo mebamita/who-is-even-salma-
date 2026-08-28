@@ -215,15 +215,26 @@ p2 {
 }
 
 .Kindle {
-    width: 50vh;
+    width: 40vh;
     height: auto;
     position: relative;
     margin-top: 10vh;
 }
 
 .ME {
-    width: 50vh;
+    width: 20vh;
     height: auto;
     border-radius: 100px;
     flex-direction: row;
+    top: 10vh;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content:start;
+    left: 20vh;
+    width: 100%;
+    padding-left: 20vh;
 }
