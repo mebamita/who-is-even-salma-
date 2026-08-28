@@ -238,3 +238,24 @@ p2 {
     width: 100%;
     padding-left: 20vh;
 }
+
+.hover-effect {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: scale(1.08);
+    filter: brightness(1) drop-shadow(0 0 30px rgba(180, 74, 219, 0.4));
+}
+
+.hover-text {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-text:hover {
+    transform: scale(1.05);
+    filter: brightness(1);
+    text-shadow: 0 0 40px rgba(180, 74, 219, 0.5);
+}
