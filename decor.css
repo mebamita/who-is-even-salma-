@@ -246,7 +246,7 @@ p2 {
 
 .hover-effect:hover {
     transform: scale(1.08);
-    filter: brightness(1) drop-shadow(0 0 30px rgba(180, 74, 219, 0.4));
+    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
 }
 
 .hover-text {
@@ -258,4 +258,22 @@ p2 {
     transform: scale(1.05);
     filter: brightness(1);
     text-shadow: 0 0 40px rgba(180, 74, 219, 0.5);
+}
+
+.CV-typa-shi {
+    font-family: 'Geologica';
+    color:  #361a00fd;
+    background-color: #d6e7fc;
+    border-radius: 1px;
+    border-color:  #cfdbf9;
+    border: #cfdbf9;
+    border: 1px;
+    position: relative;
+    margin-top: 26vh;
+    left: -16vh;
+    font-size: 4vh;
+    text-decoration: underline;
+    z-index: 500 !important;
+    pointer-events: auto !important;
+    position: relative !important;
 }

@@ -1,3 +1,22 @@
+function resetearWrapper() {
+    const mask = document.getElementById('mask');
+    const wrapper = document.getElementById('imageWrapper');
+    
+    if (mask && wrapper) {
+        mask.style.transform = 'translateY(0)';
+        mask.style.opacity = '0';
+        wrapper.style.opacity = '0';
+        wrapper.style.pointerEvents = 'none';
+        
+        gsap.set(mask, { y: 0, opacity: 0 });
+        gsap.set(wrapper, { opacity: 0, pointerEvents: 'none' });
+    }
+    
+    sessionStorage.setItem('wrapperOpen', 'false');
+    window.isOpen = false;
+}
+
+
 function crearSplitText(elemento) {
     var texto = elemento.textContent;
     var chars = texto.split('');
@@ -16,9 +35,16 @@ function crearSplitText(elemento) {
     };
 }
 
-window.addEventListener('load', function() {
+    window.addEventListener('load', function() {
+    resetearWrapper();
+    
     if (typeof gsap === 'undefined') {
-        alert('GSAP lowk no se cargó');
+        alert.apply('GSAP loooooowk didnt load');
+        return;
+    }
+
+    if (typeof gsap === 'undefined') {
+        alert.apply('GSAP loooooowk didnt load');
         return;
     }
 
@@ -69,6 +95,8 @@ window.addEventListener('load', function() {
         e.stopPropagation();
         isOpen = !isOpen;
 
+         sessionStorage.setItem('wrapperOpen', isOpen ? 'true' : 'false');
+
         if (isOpen) {
             gsap.set(wrapper, { opacity: 1, pointerEvents: 'auto' });
             gsap.to(mask, {
@@ -108,4 +136,22 @@ window.addEventListener('load', function() {
     });
 
     console.log('Animations work-uhnn');
+});
+
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        const wasOpen = sessionStorage.getItem('wrapperOpen') === 'true';
+        
+        const mask = document.getElementById('mask');
+        const wrapper = document.getElementById('imageWrapper');
+        
+        if (mask && wrapper) {
+            gsap.set(mask, { y: 0, opacity: 0 });
+            gsap.set(wrapper, { opacity: 0, pointerEvents: 'none' });
+            
+            if (wasOpen) {
+                sessionStorage.setItem('wrapperOpen', 'false');
+            }
+        }
+    }
 });
