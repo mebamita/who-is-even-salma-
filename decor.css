@@ -277,3 +277,27 @@ p2 {
     pointer-events: auto !important;
     position: relative !important;
 }
+
+.read {
+    color: #3c2e2a;
+    font-family: Geologica;
+    position: relative;
+    flex-direction: row;
+    align-items:start;
+    justify-content:start;
+    right: 36vh;
+    font-size: 3vh;
+}
+
+.list {
+    color: #3c2e2a;
+    font-family: Geologica;
+    font-size: 2.3vh;
+    position: relative;
+    margin-top: 1vh;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    right: 33vh;
+    margin-bottom: 5vh;
+}
