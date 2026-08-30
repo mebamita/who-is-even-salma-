@@ -27,7 +27,7 @@ body {
     background-color: #0f0d05f1;
     font-family: 'Slackey';
     color: white;
-    padding: 20px;
+    padding: 1.85vh;
 }
 
 .intro {
@@ -41,7 +41,7 @@ body {
     position: relative;
     width: 100%;
     height: 20vw;
-    min-height: 180px;
+    min-height: 16.67vh;
     font-family: 'Slackey';
 }
 
@@ -65,7 +65,7 @@ body {
 .fixed {
     position: fixed;
     text-align: center;
-    bottom: 50px;
+    bottom: 4.63vh;
     cursor: pointer;
 }
 
@@ -81,10 +81,10 @@ body {
     flex-direction: column;
     z-index: 1;
     overflow-y: auto;
-    padding: 20px 0;
+    padding: 1.85vh 0;
     opacity: 0;
     transition: opacity 0.8s;
-    padding-top: 120px;
+    padding-top: 11.11vh;
 
 }
 
@@ -110,10 +110,10 @@ body {
 
 
 .wrapper h2 {
-    text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
+    text-shadow: 0 0.37vh 1.85vh rgba(130, 6, 141, 0.505);
     color: rgba(180, 74, 219, 0.904);
     font-family: Slackey;
-    font-size: clamp(60px, 4vw, 83px);
+    font-size: clamp(3.13vw, 4vw, 4.2vw);
     text-align: center;
     width: 100%;
     flex-shrink: 0;
@@ -123,7 +123,7 @@ body {
 .wrapper h3 {
     font-family: Slackey;
     color: rgba(131, 54, 159, 0.904);
-    text-shadow: 0 4px 20px rgba(114, 5, 123, 0.571);
+    text-shadow: 0 0.37vh 1.85vh rgba(114, 5, 123, 0.571);
     text-align: center;
     width: 100%;
 }
@@ -150,7 +150,7 @@ body {
 
 .title-and-description {
     position: relative;
-    padding-top: clampclamp(5px, 5vh, 30px);
+    padding-top: clampclamp(0.46vh, 5vh, 2.78vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,7 +163,7 @@ body {
     margin-top: 6vh;
     padding: 0 3vh;
     height: auto;
-    border-radius: 12px;
+    border-radius: 1.11vh;
     display: block;
 }
 
@@ -174,37 +174,37 @@ body {
     left: -22vh;
     padding: 0 2vh;
     height: auto;
-    border-radius: 12px;
+    border-radius: 1.11vh;
     display: block;
 }
 
 
 .title-and-description img.laura-image {
     width: 80%;
-    max-width: 460px;
+    max-width: 42.59vh;
     height: auto;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: 11.11vh;
+    margin-top: 1.85vh;
+    margin-bottom: 1.85vh;
     display: block;
 }
 
 .title-and-description img.Cutie-Froggie-image {
     width: 80%;
-    max-width: 460px;
+    max-width: 42.59vh;
     height: auto;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: 1.11vh;
+    margin-top: 1.85vh;
+    margin-bottom: 1.85vh;
     display: block;
 }
 
 .curved-text {
-    max-width: 600px;
+    max-width: 150vh;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
-    margin-bottom: -60px;
+    filter: drop-shadow(0 0.37vh 1.85vh rba(130, 6, 141, 0.505));
+    margin-bottom: -5.56vh;
 }
 
 p2 {
@@ -225,7 +225,7 @@ p2 {
 .ME {
     width: 20vh;
     height: auto;
-    border-radius: 100px;
+    border-radius: 9.26vh;
     flex-direction: row;
     top: 10vh;
 }
@@ -247,7 +247,7 @@ p2 {
 
 .hover-effect:hover {
     transform: scale(1.08);
-    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
+    filter: brightness(1) drop-shadow(0 0 2.70vh rgba(93, 29, 116, 0.4));
 }
 
 .hover-text {
@@ -257,17 +257,17 @@ p2 {
 
 .hover-text:hover {
     transform: scale(1.05);
-    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
+    filter: brightness(1) drop-shadow(0 0 2.78vh rgba(93, 29, 116, 0.4));
 }
 
 .CV-typa-shi {
     font-family: 'Geologica';
     color:  #361a00fd;
     background-color: #d6e7fc;
-    border-radius: 1px;
+    border-radius: 0.09vh;
     border-color:  #cfdbf9;
     border: #cfdbf9;
-    border: 1px;
+    border: 0.09vh;
     position: relative;
     margin-top: 26vh;
     left: -16vh;
@@ -329,7 +329,7 @@ p5 {
 }
 
 .box1 {
-    border: 3px solid hsl(296, 71%, 85%);
+    border: 0.28vh solid hsl(296, 71%, 85%);
     border-radius: 3vh;
     background-color: #f8e6f6;
     max-width: 70vh;
@@ -341,24 +341,6 @@ p5 {
     display: flex; 
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0.93vh;
     left: 25vh;
-}
-
-@media (max-width: 1024px) {
-    .wrapper { transform: scale(0.7); transform-origin: top left; }
-    .tube { transform: scale(0.8); transform-origin: top left; }
-    .fixed { transform: scale(0.8); transform-origin: bottom center; }
-}
-
-@media (max-width: 767px) {
-    .wrapper { transform: scale(0.5); transform-origin: top left; }
-    .tube { transform: scale(0.6); transform-origin: top left; }
-    .fixed { transform: scale(0.6); transform-origin: bottom center; }
-}
-
-@media (min-width: 1920px) {
-    .wrapper { transform: scale(1.3); transform-origin: top left; }
-    .tube { transform: scale(1.2); transform-origin: top left; }
-    .fixed { transform: scale(1.2); transform-origin: bottom center; }
 }
