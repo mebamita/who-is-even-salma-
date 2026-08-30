@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     background-color: #0f0d05f1;
     font-family: 'Slackey';
     color: white;
-    padding: 1.85vh;
+    padding: 20px;
 }
 
 .intro {
@@ -40,8 +40,8 @@ body {
 .tube {
     position: relative;
     width: 100%;
-    height: clamp(120px, 20vw, 250px);
-    min-height: clamp(100px, 16.67vh, 200px);
+    height: 20vw;
+    min-height: 180px;
     font-family: 'Slackey';
 }
 
@@ -65,7 +65,7 @@ body {
 .fixed {
     position: fixed;
     text-align: center;
-    bottom: 4.63vh;
+    bottom: 50px;
     cursor: pointer;
 }
 
@@ -81,10 +81,12 @@ body {
     flex-direction: column;
     z-index: 1;
     overflow-y: auto;
-    padding: 1.85vh 0;
+    overflow-x: hidden;
+    padding: 20px 0;
     opacity: 0;
     transition: opacity 0.8s;
-    padding-top: clamp(80px, 11.11vh, 160px);
+    padding-top: 120px;
+
 }
 
 .mask {
@@ -107,11 +109,12 @@ body {
     opacity: 1;
 }
 
+
 .wrapper h2 {
-    text-shadow: 0 0.37vh 1.85vh rgba(130, 6, 141, 0.505);
+    text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
     color: rgba(180, 74, 219, 0.904);
     font-family: Slackey;
-    font-size: clamp(40px, 4vw, 83px);
+    font-size: clamp(60px, 4vw, 83px);
     text-align: center;
     width: 100%;
     flex-shrink: 0;
@@ -121,7 +124,7 @@ body {
 .wrapper h3 {
     font-family: Slackey;
     color: rgba(131, 54, 159, 0.904);
-    text-shadow: 0 0.37vh 1.85vh rgba(114, 5, 123, 0.571);
+    text-shadow: 0 4px 20px rgba(114, 5, 123, 0.571);
     text-align: center;
     width: 100%;
 }
@@ -139,7 +142,7 @@ body {
 .content-overlay {
     z-index: 1;
     position: absolute;
-    flex-direction: column;
+     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     display: flex;
@@ -148,7 +151,7 @@ body {
 
 .title-and-description {
     position: relative;
-    padding-top: clamp(5px, 5vh, 30px);
+    padding-top: clampclamp(5px, 5vh, 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,84 +160,85 @@ body {
 
 .Laura-Farmer {
     position: relative;
-    max-width: clamp(200px, 50vh, 500px);
-    margin-top: clamp(20px, 6vh, 80px);
-    padding: 0 clamp(10px, 3vh, 30px);
+    max-width: 50vh;
+    margin-top: 6vh;
+    padding: 0 3vh;
     height: auto;
-    border-radius: 1.11vh;
+    border-radius: 12px;
     display: block;
 }
 
 .Cutie-Froggie {
     position: relative;
-    max-width: clamp(180px, 50vh, 500px);
-    margin-top: clamp(80px, 25vh, 300px);
-    left: clamp(-120px, -22vh, -150px);
-    padding: 0 clamp(5px, 2vh, 20px);
+    max-width: 50vh;
+    margin-top: 25vh;
+    left: -22vh;
+    padding: 0 2vh;
     height: auto;
-    border-radius: 1.11vh;
+    border-radius: 12px;
     display: block;
 }
 
+
 .title-and-description img.laura-image {
     width: 80%;
-    max-width: clamp(180px, 42.59vh, 450px);
+    max-width: 460px;
     height: auto;
-    border-radius: 11.11vh;
-    margin-top: 1.85vh;
-    margin-bottom: 1.85vh;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: block;
 }
 
 .title-and-description img.Cutie-Froggie-image {
     width: 80%;
-    max-width: clamp(180px, 42.59vh, 450px);
+    max-width: 460px;
     height: auto;
-    border-radius: 1.11vh;
-    margin-top: 1.85vh;
-    margin-bottom: 1.85vh;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: block;
 }
 
 .curved-text {
-    max-width: clamp(200px, 150vh, 800px);
+    max-width: 600px;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 0.37vh 1.85vh rba(130, 6, 141, 0.505));
-    margin-bottom: clamp(-30px, -5.56vh, -60px);
+    filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
+    margin-bottom: -60px;
 }
 
 p2 {
-    position: relative;
+    position: relative; 
     font-family: Geologica;
     color: #620669fd;
-    font-size: clamp(14px, 2vh, 24px);
-    margin-top: clamp(150px, 37vh, 400px);
+    font-size: 2vh;
+    margin-top: 37vh;
 }
 
 .Kindle {
-    width: clamp(120px, 40vh, 350px);
+    width: 40vh;
     height: auto;
     position: relative;
-    margin-top: clamp(30px, 10vh, 120px);
+    margin-top: 10vh;
 }
 
 .ME {
-    width: clamp(60px, 20vh, 180px);
+    width: 20vh;
     height: auto;
-    border-radius: 9.26vh;
+    border-radius: 100px;
     flex-direction: row;
-    top: clamp(30px, 10vh, 120px);
+    top: 10vh;
 }
 
 .image-row {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    left: clamp(80px, 20vh, 200px);
+    align-items:start;
+    justify-content:start;
+    left: 20vh;
     width: 100%;
-    padding-left: clamp(80px, 20vh, 200px);
+    padding-left: 20vh;
 }
 
 .hover-effect {
@@ -244,7 +248,7 @@ p2 {
 
 .hover-effect:hover {
     transform: scale(1.08);
-    filter: brightness(1) drop-shadow(0 0 2.70vh rgba(93, 29, 116, 0.4));
+    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
 }
 
 .hover-text {
@@ -254,21 +258,21 @@ p2 {
 
 .hover-text:hover {
     transform: scale(1.05);
-    filter: brightness(1) drop-shadow(0 0 2.78vh rgba(93, 29, 116, 0.4));
+    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
 }
 
 .CV-typa-shi {
     font-family: 'Geologica';
-    color: #361a00fd;
+    color:  #361a00fd;
     background-color: #d6e7fc;
-    border-radius: 0.09vh;
-    border-color: #cfdbf9;
+    border-radius: 1px;
+    border-color:  #cfdbf9;
     border: #cfdbf9;
-    border: 0.09vh;
+    border: 1px;
     position: relative;
-    margin-top: clamp(80px, 26vh, 300px);
-    left: clamp(-100px, -16vh, -180px);
-    font-size: clamp(20px, 4vh, 45px);
+    margin-top: 26vh;
+    left: -16vh;
+    font-size: 4vh;
     text-decoration: underline;
     z-index: 500 !important;
     pointer-events: auto !important;
@@ -280,64 +284,78 @@ p2 {
     font-family: Geologica;
     position: relative;
     flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    right: clamp(100px, 36vh, 350px);
-    font-size: clamp(16px, 3vh, 30px);
+    align-items:start;
+    justify-content:start;
+    right: 36vh;
+    font-size: 3vh;
 }
 
 .list {
     color: #3c2e2a;
     font-family: Geologica;
-    font-size: clamp(14px, 2.3vh, 24px);
+    font-size: 2.3vh;
     position: relative;
-    margin-top: clamp(5px, 1vh, 15px);
+    margin-top: 1vh;
     flex-direction: row;
     align-items: start;
     justify-content: start;
-    right: clamp(80px, 33vh, 320px);
-    margin-bottom: clamp(20px, 5vh, 60px);
+    right: 33vh;
+    margin-bottom: 5vh;
 }
 
 .boxeyy {
     position: relative;
-    top: clamp(-300px, -60vh, -700px);
-    margin-left: clamp(-150px, -30vh, -400px);
+    top: -60vh;
+    margin-left: -30vh;
 }
 
 .another-title {
-    color: #3c2e2a;
+    color:#3c2e2a;
     font-family: Geologica;
-    font-size: clamp(20px, 4vh, 45px);
-    margin-top: clamp(150px, 38vh, 450px);
-    margin-bottom: clamp(20px, 7vh, 80px);
+    font-size: 4vh;
+    margin-top: 38vh;
+    margin-bottom: 7vh;
 }
 
 p5 {
     color: hsl(297, 40%, 59%);
     font-family: Geologica;
-    font-size: clamp(16px, 3vh, 30px);
+    font-size: 3vh;
     margin: 0;
 }
 
 .willy {
-    width: clamp(80px, 28vh, 250px);
-    border-radius: 1.2vh;
+    width: 28vh;
+    border-radius: 1.2vh;;
 }
 
 .box1 {
-    border: 0.28vh solid hsl(296, 71%, 85%);
+    border: 3px solid hsl(296, 71%, 85%);
     border-radius: 3vh;
     background-color: #f8e6f6;
-    max-width: clamp(200px, 70vh, 700px);
+    max-width: 70vh;
     width: 100%;
     height: auto;
-    padding: clamp(8px, 1.3vh, 20px);
-    margin-bottom: clamp(80px, 20vh, 250px);
-    left: clamp(80px, 30vh, 300px);
-    display: flex;
+    padding: 1.3vh;
+    margin-bottom: 20vh;
+    left: 30vh;
+    display: flex; 
     flex-direction: row;
     align-items: center;
-    gap: clamp(5px, 0.93vh, 15px);
-    left: clamp(60px, 25vh, 280px);
+    gap: 10px;
+    left: 25vh;
+} 
+
+.design-canvas-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.design-canvas {
+    width: 1366px;
+    position: relative;
+    transform-origin: top center;
+    transform: scale(min(calc(100vw / 1366px), 1));
 }
