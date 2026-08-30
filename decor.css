@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +40,8 @@ body {
 .tube {
     position: relative;
     width: 100%;
-    height: 20vw;
-    min-height: 16.67vh;
+    height: clamp(120px, 20vw, 250px);
+    min-height: clamp(100px, 16.67vh, 200px);
     font-family: 'Slackey';
 }
 
@@ -84,8 +84,7 @@ body {
     padding: 1.85vh 0;
     opacity: 0;
     transition: opacity 0.8s;
-    padding-top: 11.11vh;
-
+    padding-top: clamp(80px, 11.11vh, 160px);
 }
 
 .mask {
@@ -108,12 +107,11 @@ body {
     opacity: 1;
 }
 
-
 .wrapper h2 {
     text-shadow: 0 0.37vh 1.85vh rgba(130, 6, 141, 0.505);
     color: rgba(180, 74, 219, 0.904);
     font-family: Slackey;
-    font-size: clamp(3.13vw, 4vw, 4.2vw);
+    font-size: clamp(40px, 4vw, 83px);
     text-align: center;
     width: 100%;
     flex-shrink: 0;
@@ -141,7 +139,7 @@ body {
 .content-overlay {
     z-index: 1;
     position: absolute;
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     display: flex;
@@ -150,7 +148,7 @@ body {
 
 .title-and-description {
     position: relative;
-    padding-top: clampclamp(0.46vh, 5vh, 2.78vh);
+    padding-top: clamp(5px, 5vh, 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,9 +157,9 @@ body {
 
 .Laura-Farmer {
     position: relative;
-    max-width: 50vh;
-    margin-top: 6vh;
-    padding: 0 3vh;
+    max-width: clamp(200px, 50vh, 500px);
+    margin-top: clamp(20px, 6vh, 80px);
+    padding: 0 clamp(10px, 3vh, 30px);
     height: auto;
     border-radius: 1.11vh;
     display: block;
@@ -169,19 +167,18 @@ body {
 
 .Cutie-Froggie {
     position: relative;
-    max-width: 50vh;
-    margin-top: 25vh;
-    left: -22vh;
-    padding: 0 2vh;
+    max-width: clamp(180px, 50vh, 500px);
+    margin-top: clamp(80px, 25vh, 300px);
+    left: clamp(-120px, -22vh, -150px);
+    padding: 0 clamp(5px, 2vh, 20px);
     height: auto;
     border-radius: 1.11vh;
     display: block;
 }
 
-
 .title-and-description img.laura-image {
     width: 80%;
-    max-width: 42.59vh;
+    max-width: clamp(180px, 42.59vh, 450px);
     height: auto;
     border-radius: 11.11vh;
     margin-top: 1.85vh;
@@ -191,7 +188,7 @@ body {
 
 .title-and-description img.Cutie-Froggie-image {
     width: 80%;
-    max-width: 42.59vh;
+    max-width: clamp(180px, 42.59vh, 450px);
     height: auto;
     border-radius: 1.11vh;
     margin-top: 1.85vh;
@@ -200,44 +197,44 @@ body {
 }
 
 .curved-text {
-    max-width: 150vh;
+    max-width: clamp(200px, 150vh, 800px);
     display: block;
     margin: 0 auto;
     filter: drop-shadow(0 0.37vh 1.85vh rba(130, 6, 141, 0.505));
-    margin-bottom: -5.56vh;
+    margin-bottom: clamp(-30px, -5.56vh, -60px);
 }
 
 p2 {
-    position: relative; 
+    position: relative;
     font-family: Geologica;
     color: #620669fd;
-    font-size: 2vh;
-    margin-top: 37vh;
+    font-size: clamp(14px, 2vh, 24px);
+    margin-top: clamp(150px, 37vh, 400px);
 }
 
 .Kindle {
-    width: 40vh;
+    width: clamp(120px, 40vh, 350px);
     height: auto;
     position: relative;
-    margin-top: 10vh;
+    margin-top: clamp(30px, 10vh, 120px);
 }
 
 .ME {
-    width: 20vh;
+    width: clamp(60px, 20vh, 180px);
     height: auto;
     border-radius: 9.26vh;
     flex-direction: row;
-    top: 10vh;
+    top: clamp(30px, 10vh, 120px);
 }
 
 .image-row {
     display: flex;
     flex-direction: row;
-    align-items:start;
-    justify-content:start;
-    left: 20vh;
+    align-items: start;
+    justify-content: start;
+    left: clamp(80px, 20vh, 200px);
     width: 100%;
-    padding-left: 20vh;
+    padding-left: clamp(80px, 20vh, 200px);
 }
 
 .hover-effect {
@@ -262,16 +259,16 @@ p2 {
 
 .CV-typa-shi {
     font-family: 'Geologica';
-    color:  #361a00fd;
+    color: #361a00fd;
     background-color: #d6e7fc;
     border-radius: 0.09vh;
-    border-color:  #cfdbf9;
+    border-color: #cfdbf9;
     border: #cfdbf9;
     border: 0.09vh;
     position: relative;
-    margin-top: 26vh;
-    left: -16vh;
-    font-size: 4vh;
+    margin-top: clamp(80px, 26vh, 300px);
+    left: clamp(-100px, -16vh, -180px);
+    font-size: clamp(20px, 4vh, 45px);
     text-decoration: underline;
     z-index: 500 !important;
     pointer-events: auto !important;
@@ -283,64 +280,64 @@ p2 {
     font-family: Geologica;
     position: relative;
     flex-direction: row;
-    align-items:start;
-    justify-content:start;
-    right: 36vh;
-    font-size: 3vh;
+    align-items: start;
+    justify-content: start;
+    right: clamp(100px, 36vh, 350px);
+    font-size: clamp(16px, 3vh, 30px);
 }
 
 .list {
     color: #3c2e2a;
     font-family: Geologica;
-    font-size: 2.3vh;
+    font-size: clamp(14px, 2.3vh, 24px);
     position: relative;
-    margin-top: 1vh;
+    margin-top: clamp(5px, 1vh, 15px);
     flex-direction: row;
     align-items: start;
     justify-content: start;
-    right: 33vh;
-    margin-bottom: 5vh;
+    right: clamp(80px, 33vh, 320px);
+    margin-bottom: clamp(20px, 5vh, 60px);
 }
 
 .boxeyy {
     position: relative;
-    top: -60vh;
-    margin-left: -30vh;
+    top: clamp(-300px, -60vh, -700px);
+    margin-left: clamp(-150px, -30vh, -400px);
 }
 
 .another-title {
-    color:#3c2e2a;
+    color: #3c2e2a;
     font-family: Geologica;
-    font-size: 4vh;
-    margin-top: 38vh;
-    margin-bottom: 7vh;
+    font-size: clamp(20px, 4vh, 45px);
+    margin-top: clamp(150px, 38vh, 450px);
+    margin-bottom: clamp(20px, 7vh, 80px);
 }
 
 p5 {
     color: hsl(297, 40%, 59%);
     font-family: Geologica;
-    font-size: 3vh;
+    font-size: clamp(16px, 3vh, 30px);
     margin: 0;
 }
 
 .willy {
-    width: 28vh;
-    border-radius: 1.2vh;;
+    width: clamp(80px, 28vh, 250px);
+    border-radius: 1.2vh;
 }
 
 .box1 {
     border: 0.28vh solid hsl(296, 71%, 85%);
     border-radius: 3vh;
     background-color: #f8e6f6;
-    max-width: 70vh;
+    max-width: clamp(200px, 70vh, 700px);
     width: 100%;
     height: auto;
-    padding: 1.3vh;
-    margin-bottom: 20vh;
-    left: 30vh;
-    display: flex; 
+    padding: clamp(8px, 1.3vh, 20px);
+    margin-bottom: clamp(80px, 20vh, 250px);
+    left: clamp(80px, 30vh, 300px);
+    display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.93vh;
-    left: 25vh;
+    gap: clamp(5px, 0.93vh, 15px);
+    left: clamp(60px, 25vh, 280px);
 }
