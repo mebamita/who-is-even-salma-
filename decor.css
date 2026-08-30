@@ -345,68 +345,20 @@ p5 {
     left: 25vh;
 }
 
-/*small screens responsitivity*/
 @media (max-width: 1024px) {
-    .Cutie-Froggie { left: -10vh !important; max-width: 70% !important; margin-top: 15vh !important; }
-    .CV-typa-shi { left: -5vh !important; margin-top: 18vh !important; font-size: 3.5vh !important; }
-    .read { right: 20vh !important; font-size: 2.5vh !important; }
-    .list { right: 18vh !important; font-size: 2vh !important; }
-    .boxeyy { top: -40vh !important; margin-left: -15vh !important; }
-    .box1 { left: 15vh !important; max-width: 90% !important; padding: 1vh !important; }
-    .image-row { left: 10vh !important; padding-left: 10vh !important; flex-wrap: wrap !important; }
-    .Kindle { width: 30vh !important; }
-    .ME { width: 15vh !important; }
-    .willy { width: 20vh !important; }
-    .wrapper { padding-top: 80px !important; }
-    .tube { height: 15vh !important; min-height: 120px !important; }
-    .Laura-Farmer { max-width: 70% !important; margin-top: 4vh !important; }
-    p2 { font-size: 1.8vh !important; margin-top: 30vh !important; }
-    p5 { font-size: 2.5vh !important; }
-    .another-title { font-size: 3.5vh !important; margin-top: 28vh !important; margin-bottom: 5vh !important; }
+    .wrapper { transform: scale(0.7); transform-origin: top left; }
+    .tube { transform: scale(0.8); transform-origin: top left; }
+    .fixed { transform: scale(0.8); transform-origin: bottom center; }
 }
 
-/* phones */
 @media (max-width: 767px) {
-    .Cutie-Froggie { left: -5px !important; max-width: 90% !important; margin-top: 5vh !important; padding: 0 !important; }
-    .CV-typa-shi { left: 0 !important; margin-top: 8vh !important; font-size: 2.5vh !important; padding: 5px 10px !important; }
-    .read { right: 5px !important; font-size: 2vh !important; }
-    .list { right: 5px !important; font-size: 1.8vh !important; margin-bottom: 2vh !important; }
-    .boxeyy { top: -10vh !important; margin-left: 0 !important; }
-    .box1 { left: 0 !important; max-width: 95% !important; padding: 1vh !important; margin: 0 auto 10vh auto !important; flex-direction: column !important; align-items: center !important; gap: 5px !important; }
-    .image-row { left: 0 !important; padding-left: 5px !important; flex-direction: column !important; align-items: center !important; gap: 10px !important; }
-    .Kindle { width: 50% !important; max-width: 150px !important; margin-top: 2vh !important; }
-    .ME { width: 20% !important; max-width: 80px !important; top: 0 !important; }
-    .willy { width: 50% !important; max-width: 120px !important; }
-    .wrapper { padding-top: 40px !important; padding-left: 5px !important; padding-right: 5px !important; }
-    .wrapper h2 { font-size: 8vw !important; }
-    .wrapper h3 { font-size: 4vw !important; }
-    .tube { height: 100px !important; min-height: 80px !important; }
-    .Laura-Farmer { max-width: 90% !important; margin-top: 2vh !important; padding: 0 !important; }
-    .title-and-description img.laura-image, .title-and-description img.Cutie-Froggie-image { width: 95% !important; max-width: 300px !important; }
-    p2 { font-size: 1.6vh !important; margin-top: 15vh !important; }
-    p5 { font-size: 2vh !important; }
-    .another-title { font-size: 2.8vh !important; margin-top: 15vh !important; margin-bottom: 3vh !important; text-align: center !important; }
-    .curved-text { max-width: 100% !important; margin-bottom: -30px !important; }
-    .line { font-size: 1.5rem !important; }
+    .wrapper { transform: scale(0.5); transform-origin: top left; }
+    .tube { transform: scale(0.6); transform-origin: top left; }
+    .fixed { transform: scale(0.6); transform-origin: bottom center; }
 }
 
-/* 3. screens big like my muscles. pls nobody read the code. */
 @media (min-width: 1920px) {
-    .Cutie-Froggie { left: -30vh !important; max-width: 60vh !important; margin-top: 30vh !important; }
-    .CV-typa-shi { left: -22vh !important; margin-top: 32vh !important; font-size: 5vh !important; }
-    .read { right: 45vh !important; font-size: 4vh !important; }
-    .list { right: 40vh !important; font-size: 3.5vh !important; }
-    .boxeyy { top: -80vh !important; margin-left: -40vh !important; }
-    .box1 { left: 40vh !important; max-width: 80vh !important; padding: 2vh !important; }
-    .image-row { left: 30vh !important; padding-left: 30vh !important; }
-    .Kindle { width: 50vh !important; }
-    .ME { width: 25vh !important; }
-    .willy { width: 35vh !important; }
-    .wrapper { padding-top: 160px !important; }
-    .wrapper h2 { font-size: 5vw !important; }
-    .tube { height: 25vw !important; min-height: 250px !important; }
-    .Laura-Farmer { max-width: 60vh !important; margin-top: 8vh !important; }
-    p2 { font-size: 3vh !important; margin-top: 45vh !important; }
-    p5 { font-size: 4vh !important; }
-    .another-title { font-size: 5vh !important; margin-top: 45vh !important; margin-bottom: 10vh !important; }
+    .wrapper { transform: scale(1.3); transform-origin: top left; }
+    .tube { transform: scale(1.2); transform-origin: top left; }
+    .fixed { transform: scale(1.2); transform-origin: bottom center; }
 }
