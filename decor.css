@@ -19,7 +19,8 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +84,10 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px 0;
+    height: 100vh;
     opacity: 0;
     transition: opacity 0.8s;
     padding-top: 120px;
-
 }
 
 .mask {
@@ -100,15 +101,9 @@ body {
     pointer-events: none;
 }
 
-.wrapper {
-    opacity: 0;
-    transition: opacity 0.8s;
-}
-
 .wrapper.visible {
     opacity: 1;
 }
-
 
 .wrapper h2 {
     text-shadow: 0 4px 20px rgba(130, 6, 141, 0.505);
@@ -128,7 +123,7 @@ body {
     text-align: center;
     width: 100%;
 }
-
+ 
 .wrapper-background {
     position: fixed;
     top: 0;
@@ -139,223 +134,210 @@ body {
     z-index: 0;
 }
 
-.content-overlay {
-    z-index: 1;
-    position: absolute;
-     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    display: flex;
-    width: 100%;
-}
-
-.title-and-description {
-    position: relative;
-    padding-top: clampclamp(5px, 5vh, 30px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.Laura-Farmer {
-    position: relative;
-    max-width: 50vh;
-    margin-top: 6vh;
-    padding: 0 3vh;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-}
-
-.Cutie-Froggie {
-    position: relative;
-    max-width: 50vh;
-    margin-top: 25vh;
-    left: -22vh;
-    padding: 0 2vh;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-}
-
-
-.title-and-description img.laura-image {
-    width: 80%;
-    max-width: 460px;
-    height: auto;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.title-and-description img.Cutie-Froggie-image {
-    width: 80%;
-    max-width: 460px;
-    height: auto;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.curved-text {
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-    filter: drop-shadow(0 4px 20px rba(130, 6, 141, 0.505));
-    margin-bottom: -60px;
-}
-
-p2 {
-    position: relative; 
-    font-family: Geologica;
-    color: #620669fd;
-    font-size: 2vh;
-    margin-top: 37vh;
-}
-
-.Kindle {
-    width: 40vh;
-    height: auto;
-    position: relative;
-    margin-top: 10vh;
-}
-
-.ME {
-    width: 20vh;
-    height: auto;
-    border-radius: 100px;
-    flex-direction: row;
-    top: 10vh;
-}
-
-.image-row {
-    display: flex;
-    flex-direction: row;
-    align-items:start;
-    justify-content:start;
-    left: 20vh;
-    width: 100%;
-    padding-left: 20vh;
-}
-
-.hover-effect {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    cursor: pointer;
-}
-
-.hover-effect:hover {
-    transform: scale(1.08);
-    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
-}
-
-.hover-text {
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.hover-text:hover {
-    transform: scale(1.05);
-    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
-}
-
-.CV-typa-shi {
-    font-family: 'Geologica';
-    color:  #361a00fd;
-    background-color: #d6e7fc;
-    border-radius: 1px;
-    border-color:  #cfdbf9;
-    border: #cfdbf9;
-    border: 1px;
-    position: relative;
-    margin-top: 26vh;
-    left: -16vh;
-    font-size: 4vh;
-    text-decoration: underline;
-    z-index: 500 !important;
-    pointer-events: auto !important;
-    position: relative !important;
-}
-
-.read {
-    color: #3c2e2a;
-    font-family: Geologica;
-    position: relative;
-    flex-direction: row;
-    align-items:start;
-    justify-content:start;
-    right: 36vh;
-    font-size: 3vh;
-}
-
-.list {
-    color: #3c2e2a;
-    font-family: Geologica;
-    font-size: 2.3vh;
-    position: relative;
-    margin-top: 1vh;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    right: 33vh;
-    margin-bottom: 5vh;
-}
-
-.boxeyy {
-    position: relative;
-    top: -60vh;
-    margin-left: -30vh;
-}
-
-.another-title {
-    color:#3c2e2a;
-    font-family: Geologica;
-    font-size: 4vh;
-    margin-top: 38vh;
-    margin-bottom: 7vh;
-}
-
-p5 {
-    color: hsl(297, 40%, 59%);
-    font-family: Geologica;
-    font-size: 3vh;
-    margin: 0;
-}
-
-.willy {
-    width: 28vh;
-    border-radius: 1.2vh;;
-}
-
-.box1 {
-    border: 3px solid hsl(296, 71%, 85%);
-    border-radius: 3vh;
-    background-color: #f8e6f6;
-    max-width: 70vh;
-    width: 100%;
-    height: auto;
-    padding: 1.3vh;
-    margin-bottom: 20vh;
-    left: 30vh;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    left: 25vh;
-} 
-
 .design-canvas-wrapper {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
+ 
 .design-canvas {
     width: 1366px;
     position: relative;
     transform-origin: top center;
     transform: scale(min(calc(100vw / 1366px), 1));
+}
+ 
+.content-overlay {
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+}
+ 
+.title-and-description {
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+ 
+.curved-text {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto -60px;
+    filter: drop-shadow(0 4px 20px rgba(130, 6, 141, 0.505));
+}
+ 
+.bio-box {
+    border: 2px solid #fffadf;
+    padding: 8px;
+    background-color: #fdfdf0;
+    width: 300px;
+    font-size: 15px;
+    font-family: 'Geologica';
+    color: #382100fd;
+    margin-top: 38px;
+}
+
+.image-row {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+ 
+.Kindle {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    width: 307px;
+    height: auto;
+}
+ 
+.ME {
+    position: absolute;
+    left: 372px;
+    top: 0px;
+    width: 154px;
+    height: auto;
+    border-radius: 100px;
+}
+ 
+.arrow-doodle {
+    position: absolute;
+    left: 372px;
+    top: 200px;
+}
+ 
+.CV-typa-shi {
+    position: absolute;
+    left: 581px;
+    top: 90px;
+    width: 95px;
+    font-family: 'Geologica';
+    color: #361a00fd;
+    background-color: #d6e7fc;
+    border: 1px solid #cfdbf9;
+    font-size: 15px;
+    line-height: 1.15;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 500;
+    padding: 3px 6px;
+    white-space: normal;
+    pointer-events: auto;
+}
+ 
+.boxeyy {
+    position: absolute;
+    left: 691px;
+    top: 90px;
+    border: 2px solid #ffdff8;
+    padding: 8px;
+    background-color: #fdf0fb;
+    width: 115px;
+    font-size: 15px;
+    font-family: 'Geologica';
+    color: #382100fd;
+}
+ 
+.side-bubbles {
+    position: absolute;
+    right: 60px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+ 
+.Laura-Farmer,
+.Cutie-Froggie {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+ 
+.hover-effect {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+}
+ 
+.hover-effect:hover {
+    transform: scale(1.08);
+    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
+}
+ 
+.hover-text {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+ 
+.hover-text:hover {
+    transform: scale(1.05);
+    filter: brightness(1) drop-shadow(0 0 30px rgba(93, 29, 116, 0.4));
+}
+
+.read {
+    color: #3c2e2a;
+    font-family: 'Geologica';
+    margin-top: 0px;
+    margin-left: 60px;
+    font-size: 18px;
+}
+ 
+.list {
+    color: #3c2e2a;
+    font-family: 'Geologica';
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 60px;
+    margin-bottom: 38px;
+}
+ 
+.another-title {
+    color: #3c2e2a;
+    font-family: 'Geologica';
+    font-size: 31px;
+    margin-top: 60px;
+    margin-bottom: 54px;
+}
+ 
+.willy-name {
+    color: hsl(297, 40%, 59%);
+    font-family: 'Geologica';
+    font-size: 23px;
+    margin: 0;
+}
+ 
+.willy {
+    width: 215px;
+    border-radius: 9px;
+}
+ 
+.box1 {
+    border: 3px solid hsl(296, 71%, 85%);
+    border-radius: 23px;
+    background-color: #f8e6f6;
+    max-width: 538px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 154px;
+    left: 192px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-overlay {
+    padding-bottom: 80px;
+    min-height: calc(100vh - 100px);
 }
