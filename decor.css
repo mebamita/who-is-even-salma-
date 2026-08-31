@@ -328,15 +328,15 @@ body {
 }
 
 .box1 {
-    border: 4px solid hsl(296, 71%, 85%);
+    border: 4px solid hsl(296, 96%, 91%);
     border-radius: 23px;
     background-color: #fff5fe;
+    position: relative;
     max-width: 538px;
     width: 100%;
     height: auto;
     padding: 10px;
     margin-bottom: 154px;
-    left: 192px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -350,6 +350,36 @@ body {
     margin-top: 20px;
     color:hsl(296, 35%, 36%);
     font-family: Geologica;
+    text-decoration: underline;
+}
+
+#videoContainer {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+z-index: 10;
+}
+
+#majoVideo {
+width: 90%;
+max-height: 80%;
+}
+
+#closeButton {
+    font-family: Geologica;
+    color:hsl(296, 35%, 36%);
+    background-color:#ffdff8;
+    border: 2px solid hsl(296, 35%, 36%);
+    margin-top: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .content-overlay {
